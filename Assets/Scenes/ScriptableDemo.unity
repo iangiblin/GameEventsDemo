@@ -1349,7 +1349,7 @@ MonoBehaviour:
     <B>Classic Button</B> below.
 
 
-    The advantage of the <B>GameEvent</B> is that
+    One advantage of the <B>GameEvent</B> is that
     you are broadcasting an arbitrary event which can be picked up by any object
     using the GameEventListener. That way, say you make your Cube into a prefab,
     they''d all hear the event without needing to assign anything in the inspector.

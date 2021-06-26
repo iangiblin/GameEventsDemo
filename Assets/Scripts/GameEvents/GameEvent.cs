@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-// see Jason Game Architecture 2021 - lesson 7C
-
+// this allows us to make new GameEvents from the menu.
 [CreateAssetMenu(menuName = "Game Event")]
+
 public class GameEvent : ScriptableObject
 {
     private static HashSet<GameEvent> _listenedEvents = new HashSet<GameEvent>();
