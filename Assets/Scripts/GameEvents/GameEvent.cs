@@ -26,18 +26,17 @@ public class GameEvent : ScriptableObject
     }
 
     // this is on each individual event e.g. OpenDoor
-    [ContextMenu("Invoke")]
+    [ContextMenu("Invoke this GameEvent")]
     public void Invoke()
     {
         Debug.Log($"GameEvent {this.name} calling RaiseEvent");
         foreach (var gameEventListener in _gameEventListeners)
         {
-            gameEventListener.RaiseEvent();
+            gameEventListener.HandleGameEvent();
         }
     }
 
-    // static method - send message to all listeners, called from
-    // some other object like a button, GameEvent.RaiseEvent(eventName);
+    // static method - send message to all listeners
     public static void RaiseEvent(string eventName)
     {
         foreach (var gameEvent in _listenedEvents)

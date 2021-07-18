@@ -10,6 +10,7 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameEvents/GameEventListener.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uVOv6hFm8iwAVlRiH0OK77uj5f" />
@@ -29,7 +30,6 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -39,7 +39,6 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>

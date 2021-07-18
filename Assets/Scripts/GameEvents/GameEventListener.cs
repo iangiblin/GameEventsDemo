@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class GameEventListener : MonoBehaviour
 {
-    // this sits on a gameobject (e.g. a door) and allows you to pick up
+    // this sits on a gameobject (e.g. a cube) and allows you to pick up
     // the specific event when it is broadcast.
     
     [SerializeField] private UnityEvent _unityEvent;
@@ -11,7 +11,7 @@ public class GameEventListener : MonoBehaviour
 
     private void Awake() => _gameEvent.Register(this);
 
-    public void RaiseEvent()
+    public void HandleGameEvent()
     {
         Debug.Log($"GameEventListener {this.name} invoking {_unityEvent}");
         _unityEvent.Invoke();
